@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["google"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "object-curly-spacing": "off",
+    "linebreak-style": ["error", "windows"],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "comma-dangle": ["error", "only-multiline"],
+    "indent": "error",
+    "max-len": ["error", {
+      "code": 80,
+      "template": 80,
+      "tabWidth": 2,
+      "comments": 80,
+      "ignorePattern": "",
+      "ignoreComments": false,
+      "ignoreTrailingComments": false,
+      "ignoreUrls": false,
+      "ignoreStrings": false,
+      "ignoreTemplateLiterals": false,
+      "ignoreRegExpLiterals": false,
+      "ignoreHTMLAttributeValues": false,
+      "ignoreHTMLTextContents": false
+    }]
+  }
+
+  // "require-jsdoc": [
+  //   "error",
+  //   {
+  //     "require": {
+  //       "FunctionDeclaration": true,
+  //       "MethodDefinition": true,
+  //       "ClassDeclaration": true,
+  //       "ArrowFunctionExpression": true,
+  //       "FunctionExpression": true
+  //     }
+  //   }
+  // ]
+}

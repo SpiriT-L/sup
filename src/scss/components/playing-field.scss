@@ -1,0 +1,38 @@
+.playing-field {
+  flex: 2 1 0;
+  order: 1;
+  flex-basis: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0px 0px 0px;
+  }
+}
+
+.ancestral-map{
+  max-width: 443px;
+  max-height: 574px;
+margin: 0px 0px 100px 0px;
+  &__img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+}
+
+.difficulty{
+  display: flex;
+
+  &__btn{
+    @include title;
+    margin: 0px 20px 0px 0px;
+    width: 200px;
+    height: 50px;
+    &:nth-last-child(1){
+      margin: 0px 0px 0px 0px;
+  }
+  }
+}
