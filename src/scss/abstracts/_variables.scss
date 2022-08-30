@@ -2,23 +2,22 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
+/// Regular font family | Основной шрифт
 /// @type List
-$font-primary: 'Aleo', serif;
+$font-primary: 'Comfortaa', cursive;
 
-/// Regular font family
+/// The main font | Основной шрифт
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
+$main-font: 'Inter', sans-serif;
 
-/// @type List
-$font-family-rht: 'Red Hat Text', sans-serif !default;
-$font-family-aleo: 'Aleo', serif !default;
+// /// @type List
+// $font-family-rht: 'Red Hat Text', sans-serif !default;
+// $font-family-aleo: 'Aleo', serif !default;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-  'Monaco', monospace !default;
+// /// Code (monospace) font family
+// /// @type List
+// $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+//   'Monaco', monospace !default;
 
 /// Copy background color
 /// @type Color
@@ -35,16 +34,16 @@ $color-title-h1: #ffffff;
 $color-description: #ffffff;
 $color-placheholder: #f2785c;
 $color-title-h2: #f2785c;
-$color-title-h3: #0D606F;
+$color-title-h3: #0d606f;
 $color-background-icon: #f2785c;
 $color-step-descr: #0d606f;
 $color-dot: rgba(242, 120, 92, 0.5);
 $color-dot-hover: #f2785c;
-$color-btn-text: #FFFFFF;
-$color-stories-content: #0D606F;
-$color-stories-read-more: #0D606F;
+$color-btn-text: #ffffff;
+$color-stories-content: #0d606f;
+$color-stories-read-more: #0d606f;
 $color-text-footer: #ffffff;
-$color-title-pop-up: #0D606F;
+$color-title-pop-up: #0d606f;
 // $color-button: ;
 // $color-hover: ;
 // $color-active: ;
@@ -57,13 +56,25 @@ $lg: 992px; // mb3
 $xl: 1200px; // mb2
 $xxl: 1400px; // mb1
 
-/// Copy text color
+/// The main color of the text | Основной цвет текста
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$color-main-text-1: #262C27 !default;
 
-/// Main brand color
+/// The main color of the text | Основной цвет текста 2
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$color-main-text-2: rgb(255, 255, 255) !default;
+
+/// Color when hovering | Текст при наведении
+/// @type Color
+$color-logo-hover: #0093a1 !default;
+
+/// Color btn | Цвет кнопки Header
+/// @type Color
+$color-header-btn: #262C27 !default;
+
+/// Color btn hower | Цвет кнопки Header  при наведении
+/// @type Color
+$color-header-btn-hover: #B9C400 !default;
 
 /// Light grey
 /// @type Color

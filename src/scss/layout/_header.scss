@@ -3,69 +3,74 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  // // background-color: rgba(242, 120, 92, 0.7);
-  // box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-  // width: 100%;
-  // height: 90px;
-  // z-index: 1;
-  // position: absolute;
-  // // background:linear-gradientrgba(242, 120, 92, 0.7) url(../img/bg-section-1.png);
+  background-image: url(./../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  // .header__top
 
-  // // url(../img/bg-section-1.png) center no-repeat;
-  // // background-size: cover;
-  // @media (max-width: $md){
-  //   box-shadow: none;
-  //   top: 24px;
-  // }
-  // &__bg {
-  //   background: linear-gradient(
-  //     to top,
-  //     rgba(242, 120, 92, 0.7),
-  //     rgba(242, 120, 92, 0.7)
-  //   );
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-
-  //   @media (max-width: $md){
-  //   // display: none;
-  //   background: none;
-  //   }
-  // }
-
-  // .header__inner
-
-  &__inner {
+  &__top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0 0 0;
+    padding: 57px 0px;
+    gap: 100px;
+    justify-content: flex-end;
   }
-  &__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+
+  // .header__btn
+
+  &__btn {
+    text-transform: uppercase;
+    @include font-btn;
+    width: 193px;
+    height: 42.46px;
+    background-color: $color-header-btn;
+    padding: 12px 71px;
+    cursor: pointer;
+    border: none;
+    color: $color-main-text-2;
+    transition: background-color .2s ease;
+    &:hover{
+      background-color:$color-header-btn-hover;
+      color: $color-main-text-1;
+      border: none;
+      // transition: background-color .2s ease;
+    }
+  }
+
+  // .header__phone
+
+  &__phone {
+    @include font-phone;
+    color: $color-main-text-1;
+    cursor: pointer;
+  }
+
+  // .header__content
+
+  &__content {
+  }
+
+  // .header__content-box
+
+  &__content-box {
+  }
+
+  // .header__title
+
+  &__title {
+  }
+
+  // .header__text
+
+  &__text {
+  }
+
+  // .header__decor-text
+
+  &__decor-text {
   }
 }
 
 .logo {
-  &__img {
-    @media (max-width: $md) {
-      display: none;
-    }
-  }
-  &__img-mob {
-    display: none;
-    @media (max-width: $md) {
-      display: block;
-    }
-  }
-}
-
-.user-box {
-  margin: 0px 0px 0px 0px;
-  @media (max-width: $md){
-    display: none;
-  }
 }

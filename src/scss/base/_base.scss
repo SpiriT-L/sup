@@ -17,8 +17,11 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
+  @include main-font;
+  color: $color-main-text-1;
   width: 100%;
   height: 100vh;
+  color: $color-main-text-1;
 }
 
 /**
@@ -33,24 +36,21 @@ html {
   box-sizing: inherit;
 }
 
-//
-// $font-primary: 'Arial';
-
-// a{
-//   @include font-font(1.6rem, 400);
-// }
-
 /**
  * Basic styles for links
  */
 a {
-  color: $color-link;
+  color: inherit;
   text-decoration: none;
 
-  @include on-event {
-    color: $color-text;
-    text-decoration: none;
-  }
+  // @include on-event {
+  //   color: $color-text;
+  //   text-decoration: none;
+  // }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 hr {

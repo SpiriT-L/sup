@@ -8,8 +8,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize',
-  'vendors/reset';
+  'vendors/normalize';
+  // 'vendors/reset';
 
 // 3. Base stuff
 @import
@@ -27,6 +27,7 @@
 // 5. Components
 @import
   'components/menu',
+  'components/logo',
   'components/section',
   'components/button',
   'components/search',

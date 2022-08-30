@@ -1,17 +1,13 @@
 /**
  * Basic typography style for copy text
  */
-body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
-}
 
-.title{
-  @include title;
-  @media (max-width: $md){
-  display: none;
-  }
-}
+// .title{
+//   @include title;
+//   @media (max-width: $md){
+//   display: none;
+//   }
+// }
 // .title{
 //   @include title;
 //   margin: 15px 0px 15px 0px;
@@ -20,15 +16,6 @@ body {
 //   }
 // }
 
-.description {
-  &__plan {
-    @include text-description;
-    margin: 0px 0px 46px 0px;
-    @media (max-width: $md){
-    display: none;
-    }
-  }
-}
 
 // .title {
 //   margin: 94px 0 40px 0;
@@ -41,8 +28,8 @@ body {
 //   }
 // }
 
-.steps {
-  &__descr {
-    @include text-step-descr;
-  }
-}
+// .steps {
+//   &__descr {
+//     @include text-step-descr;
+//   }
+// }
