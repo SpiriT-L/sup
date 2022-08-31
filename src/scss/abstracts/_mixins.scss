@@ -86,6 +86,26 @@
   @include font-font(2rem, 700, $font-primary, normal);
   line-height: 22px;
 }
+@mixin font-phone-hover {
+  @include font-font(2.4rem, 700, $font-primary, normal);
+  line-height: 27px;
+}
+@mixin font-header-title {
+  @include font-font(6.4rem, 700, $font-primary, normal);
+  line-height: 71px;
+}
+@mixin font-header-text {
+  @include font-font(2.4rem, 700, $font-primary, normal);
+  line-height: 27px;
+}
+@mixin font-header-decor-text {
+  @include font-font(13rem, 700, $font-primary, normal);
+  line-height: 145px;
+}
+@mixin font-header-decor-text-3 {
+  @include font-font(3.2rem, 300, $main-font, italic);
+  line-height: 39px;
+}
 
 // // font family title
 // @mixin text-title-h1 {
