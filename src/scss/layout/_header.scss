@@ -17,10 +17,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
-    height: 456px;
+    height: 350px;
     transform: translateY(50%);
     z-index: 2;
   }
@@ -31,7 +31,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    bottom: 0;
+    bottom: 80px;
     left: 0;
     right: 0;
     height: 456px;
@@ -124,7 +124,7 @@
     opacity: 0.3;
     z-index: 1;
     right: 142px;
-    bottom:150px;
+    bottom:100px;
   }
   &__decor-text--2 {
     opacity: 0.3;
