@@ -196,6 +196,7 @@
     background-image: url(./../img/svg/star.svg);
     bottom: 130px;
     right: 26px;
+    transition: all .3s;
   }
 
   // .price__btn
@@ -208,6 +209,11 @@
     @include font-btn-price;
     color: $color-item-title-active;
     cursor: pointer;
+    &:hover{
+      background-color:$color-header-btn-hover;
+      color: $color-header-btn;
+      border: none;
+    }
   }
 
   // .price__img
