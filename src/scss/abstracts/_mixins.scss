@@ -114,9 +114,24 @@
   @include font-font(6rem, 400, $font-primary, normal);
   line-height: 67px;
 }
-@mixin font-info-text {
-  @include font-font(1.8rem, 700, $main-font, italic);
+@mixin font-info-title {
+  @include font-font(1.8rem, 700, $main-font, normal);
   line-height: 22px;
+}
+
+@mixin font-info-text {
+  @include font-font(1.8rem, 400, $main-font, normal);
+  line-height: 22px;
+}
+
+@mixin font-btn-price {
+  @include font-font(4rem, 700, $main-font, normal);
+  line-height: 45px;
+}
+
+@mixin font-icon-price {
+  @include font-font(3.5rem, 700, $main-font, normal);
+  line-height: 42px;
 }
 
 // // font family title
