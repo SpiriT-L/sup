@@ -134,6 +134,16 @@
   line-height: 42px;
 }
 
+@mixin font-tech-list {
+  @include font-font(2rem, 700, $main-font, normal);
+  line-height: 24px;
+}
+
+@mixin font-life {
+  @include font-font(3.2rem, 800, $main-font, italic);
+  line-height: 39px;
+}
+
 // // font family title
 // @mixin text-title-h1 {
 //   @include font-font(8rem, 700, $font-family-aleo, normal);

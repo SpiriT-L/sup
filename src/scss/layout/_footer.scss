@@ -1,0 +1,135 @@
+.footer {
+  background: $color-main-text-1;
+  color: $color-main-text-2;
+  padding: 100px 0px 83px 0px;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // padding: 87px 0px 0px 0px;
+  }
+  // .footer__form
+
+  &__form {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 57px 0px;
+  }
+
+  // .footer__title
+
+  &__title {
+    color: $color-main-text-2;
+    margin: 0px 0px 27px 0px;
+    text-transform: uppercase;
+  }
+
+  // .footer__input
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    // opacity: 0.4;
+    display: block;
+    width: 100%;
+    // padding: 10px 0px 0px 0px;
+    color: $color-main-text-2;
+    &:not(:last-child) {
+      margin: 0px 0px 57px 0px;
+    }
+    &::placeholder {
+      @include font-info-title;
+      color: rgba(255, 255, 255, 0.4);
+      padding: 10px 0px 10px 0px;
+      opacity: 0.2;
+    }
+    &:focus-visible {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  // .footer__btn
+
+  &__btn {
+    width: 193px;
+    height: 42.46px;
+    background-color: $color-main-text-2;
+    @include font-phone;
+    color: $color-main-text-1;
+    transition: background-color ease 0.3s;
+    cursor:  pointer;
+    &:hover {
+      background-color: $color-header-btn-hover;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    align-self: flex-start;
+    & path {
+      cursor: pointer;
+      transition: fill 0.2s ease;
+      &:hover{
+        fill: $color-logo-hover;
+      }
+    }
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+  }
+
+  // .footer__list
+
+  &__menu-list {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+  }
+
+  // .footer__list-item
+
+  &__menu-item {
+  }
+  &__menu-link {
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+    &:hover {
+      color: $color-header-btn-hover;
+    }
+  }
+}
+.title {
+  @include font-h3-title;
+}
+.btn {
+}
+.instagram {
+  // .instagram__block
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 52px;
+    margin: 0px 0px 48px 0px;
+  }
+
+  // .instagram__title
+
+  &__title {
+    @include font-info-title;
+    margin: 0px 0px 28px 0px;
+  }
+
+  // .instagram__img
+
+  &__img {
+  }
+}
