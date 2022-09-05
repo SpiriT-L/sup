@@ -25,6 +25,16 @@
     gap: 85px;
     padding: 50px 0px 0px 0px;
     margin: 0px 0px 45% 0px;
+    @media (max-width: $lg) {
+      justify-content: space-between;
+      align-items: center;
+      gap: 2%;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 10% 0px;
+    }
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
   }
 
   // .info__top-text
@@ -35,6 +45,9 @@
     padding: 215px 0px 0px 0px;
     width: 290px;
     position: relative;
+    @media (max-width: $lg) {
+      width: 100%;
+    }
   }
 
   &__top-text-one {
@@ -42,6 +55,9 @@
   }
   &__top-text-two {
     border-bottom: 1px solid $color-main-text-2;
+    @media (max-width: $lg) {
+      padding: 50px 0px 10px 0px;
+    }
   }
 
   // .info__btn
@@ -65,6 +81,10 @@
     display: flex;
     gap: 160px;
     padding-bottom: 50px;
+    @media (max-width: $lg) {
+      flex-direction: column;
+      gap: 5%;
+    }
   }
 
   // .info__title
@@ -82,6 +102,9 @@
     border-bottom: 1px solid $color-main-text-2;
     padding: 30px 0;
     width: 565px;
+    @media (max-width: $lg) {
+      width: 100%;
+    }
   }
 
   // .info__bottom-item
@@ -93,6 +116,12 @@
     gap: 25px;
     width: 737px;
     margin-bottom: 15px;
+    @media (max-width: $xl) {
+      width: 410px;
+    }
+    @media (max-width: $lg) {
+      width: 100%;
+    }
   }
 
   // .info__bottom-caption
@@ -102,25 +131,29 @@
   }
   &__bottom-text {
     width: 440px;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
 }
 .btn {
-  & path, circle{
-    transition: all .3s;
+  & path,
+  circle {
+    transition: all 0.3s;
   }
   & span {
     padding: 12px 0px 0px 0px;
     display: block;
     color: $color-main-text-2;
   }
-  & :hover path{
+  & :hover path {
     fill: $color-header-btn-hover;
   }
-  & :hover circle{
+  & :hover circle {
     stroke: $color-header-btn-hover;
   }
-  &:hover span{
-    color:$color-header-btn-hover;
+  &:hover span {
+    color: $color-header-btn-hover;
   }
 }
 
@@ -148,6 +181,15 @@
     display: flex;
     gap: 100px;
     padding: 30px 0px 0px 0px;
+    @media (max-width: $xl) {
+      justify-content: space-between;
+      gap: 10px;
+    }
+    @media (max-width: $lg) {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   // .price__info
@@ -156,12 +198,18 @@
     position: relative;
     max-width: 500px;
     padding: 30px 0px 0px 0px;
+    @media (max-width: $lg) {
+      mx-width: 100%;
+    }
   }
 
   // .price__list
 
   &__list {
     max-width: 292px;
+    @media (max-width: $lg){
+      max-width: 100%;
+    }
   }
 
   // .price__item
@@ -197,6 +245,9 @@
   &__item-text {
     @include font-info-text;
     max-width: 280px;
+    @media (max-width: $xl) {
+      max-width: 100%;
+    }
   }
 
   // .price__icon
@@ -216,8 +267,8 @@
     background-size: cover;
     bottom: 130px;
     right: 0px;
-    transition: transform .3s;
-    &:hover{
+    transition: transform 0.3s;
+    &:hover {
       transform: scale(1.3);
     }
   }
@@ -239,12 +290,22 @@
       color: $color-header-btn;
       border: none;
     }
+    @media (max-width: $xl) {
+      width: 100%;
+      margin: 200px 0px 0px 0px;
+    }
   }
 
   // .price__img
 
   &__img {
     max-width: 600px;
+    @media (max-width: $xl) {
+      object-fit: contain;
+    }
+    @media (max-width: $lg) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -276,7 +337,7 @@
   &__btn {
     position: absolute;
     right: 356px;
-    top: 652;
+    top: 370px;
     // &:hover span{
     //   color: $color-header-btn-hover;
     // }
@@ -374,7 +435,7 @@
   padding: 0px 0px 150px 0px;
 }
 .gallery-max {
- width: 100%;
+  width: 100%;
 
   // .gallery-max__box
 
@@ -383,7 +444,6 @@
     gap: 20px;
     grid-template-columns: 300px 469px 391px;
     grid-template-rows: 340px 270px 270px;
-
   }
 
   // .gallery-max__img
@@ -430,7 +490,6 @@
     color: $color-main-text-2;
     & span {
       max-width: 201px;
-
     }
   }
 }
