@@ -1,0 +1,263 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// /// Make a context based selector a little more friendly
+// /// @author Kitty Giraudel
+// /// @param {String} $context
+// @mixin when-inside($context) {
+//   #{$context} & {
+//     @content;
+//   }
+// }
+
+// @mixin main-font {
+//   font: {
+//     family: $main-font;
+//     style: normal;
+//     weight: 400;
+//     size: 1.8em;
+//   }
+// }
+
+// @mixin title {
+//   font: {
+//     family: $font-primary;
+//     size: 1.4em;
+//     weight: bold;
+//   }
+//   color: #d9c01c;
+// }
+
+// @mixin large-text {
+//   font: {
+//     family: Arial;
+//     size: 20px;
+//     weight: bold;
+//   }
+//   color: #ff0000;
+// }
+
+@mixin font-font(
+  $size: 1.8rem,
+  $weight: 400,
+  $family: $main-font,
+  $style: normal
+) {
+  font: {
+    family: $family;
+    style: $style;
+    weight: $weight;
+    size: $size;
+  }
+}
+
+// // font family menu
+@mixin main-font {
+  @include font-font(1.6rem, 500, $main-font, normal);
+  line-height: 22px;
+}
+@mixin font-btn {
+  @include font-font(2rem, 700, $font-primary, normal);
+  line-height: 22px;
+}
+@mixin font-phone {
+  @include font-font(2rem, 700, $font-primary, normal);
+  line-height: 22px;
+}
+@mixin font-phone-hover {
+  @include font-font(2.4rem, 700, $font-primary, normal);
+  line-height: 27px;
+}
+@mixin font-header-title {
+  @include font-font(6.4rem, 700, $font-primary, normal);
+  line-height: 71px;
+}
+@mixin font-header-text {
+  @include font-font(2.4rem, 700, $font-primary, normal);
+  line-height: 27px;
+}
+@mixin font-header-decor-text {
+  @include font-font(13rem, 700, $font-primary, normal);
+  line-height: 145px;
+}
+@mixin font-header-decor-text-3 {
+  @include font-font(3.2rem, 300, $main-font, italic);
+  line-height: 39px;
+}
+@mixin font-info-top-text {
+  @include font-font(1.8rem, 400, $main-font, italic);
+  line-height: 22px;
+}
+@mixin font-h3-title {
+  @include font-font(6rem, 400, $font-primary, normal);
+  line-height: 67px;
+}
+@mixin font-info-title {
+  @include font-font(1.8rem, 700, $main-font, normal);
+  line-height: 22px;
+}
+
+@mixin font-info-text {
+  @include font-font(1.8rem, 400, $main-font, normal);
+  line-height: 22px;
+}
+
+@mixin font-btn-price {
+  @include font-font(4rem, 700, $main-font, normal);
+  line-height: 45px;
+}
+
+@mixin font-icon-price {
+  @include font-font(3.5rem, 700, $main-font, normal);
+  line-height: 42px;
+}
+
+@mixin font-tech-list {
+  @include font-font(2rem, 700, $main-font, normal);
+  line-height: 24px;
+}
+
+@mixin font-life {
+  @include font-font(3.2rem, 800, $main-font, italic);
+  line-height: 39px;
+}
+
+// // font family title
+// @mixin text-title-h1 {
+//   @include font-font(8rem, 700, $font-family-aleo, normal);
+//   line-height: 96px;
+//   color: $color-title-h1;
+// }
+
+// // font family title
+// // @mixin text-description {
+// //   @include font-font(2rem, 700, $font-family-aleo, italic);
+// //   line-height: 24px;
+// //   color: $color-title-h1;
+// // }
+
+// // font family title
+// @mixin text-placheholder {
+//   @include font-font(2.4rem, 400, $font-family-aleo, italic);
+//   line-height: 24px;
+//   color: $color-placheholder;
+//   @media (max-width: $md) {
+//     @include font-font(1.4rem, 400, $font-family-aleo, italic);
+//     line-height: 17px;
+//   }
+// }
+
+// // font family btn_search
+// @mixin text-btn_search {
+//   @include font-font(2.4rem, 500, $font-family-rht, normal);
+//   line-height: 32px;
+//   color: $color-menu;
+//   @media (max-width: $md) {
+//     @include font-font(1.1rem, 500, $font-family-rht, normal);
+//     line-height: 15px;
+//   }
+// }
+
+// // font family title h2
+// @mixin text-title_h2 {
+//   @include font-font(4rem, 500, $font-family-rht, normal);
+//   line-height: 53px;
+//   color: $color-title-h2;
+//   @media (max-width: $md) {
+//     @include font-font(1.4rem, 500, $font-family-rht, normal);
+//     line-height: 19px;
+//   }
+// }
+// font family text descr
+// @mixin text-step-descr {
+//   @include font-font(2rem, 400, $font-family-aleo, normal);
+//   line-height: 24px;
+//   color: $color-step-descr;
+//   @media (max-width: $md) {
+//     @include font-font(1rem, 400, $font-family-aleo, normal);
+//     line-height: 12px;
+//   }
+// }
+
+// @mixin text-btn-findmore {
+//   @include font-font(2.4rem, 500, $font-family-rht, normal);
+//   line-height: 32px;
+//   color: $color-btn-text;
+//   @media (max-width: $md) {
+//     @include font-font(1.1rem, 500, $font-family-rht, normal);
+//     line-height: 15px;
+//   }
+// }
+
+// @mixin text-title_h3 {
+//   @include font-font(3.5rem, 400, $font-family-aleo, normal);
+//   line-height: 42px;
+//   color: $color-title-h3;
+//   @media (max-width: $md) {
+//     @include font-font(1.1rem, 400, $font-family-aleo, normal);
+//     line-height: 13px;
+//   }
+// }
+
+// @mixin text-stories-content {
+//   @include font-font(2rem, 400, $font-family-aleo, normal);
+//   line-height: 24px;
+//   color: $color-stories-content;
+//   @media (max-width: $md) {
+//     @include font-font(0.9rem, 400, $font-family-aleo, normal);
+//     line-height: 11px;
+//   }
+// }
+
+// @mixin text-stories-read-more {
+//   @include font-font(2rem, 700, $font-family-aleo, normal);
+//   line-height: 24px;
+//   color: $color-stories-read-more;
+//   @media (max-width: $md) {
+//     @include font-font(0.9rem, 700, $font-family-aleo, normal);
+//     line-height: 11px;
+//   }
+// }
+
+// @mixin text-footer {
+//   @include font-font(1.6rem, 500, $font-family-rht, normal);
+//   line-height: 21px;
+//   color: $color-text-footer;
+// }
+
+// @mixin title-pop-up {
+//   @include font-font(3.2rem, 700, $font-family-aleo, normal);
+//   line-height: 38px;
+//   color: $color-title-pop-up;
+//   @media (max-width: $md) {
+//     @include font-font(0.9rem, 700, $font-family-aleo, normal);
+//     line-height: 11px;
+//   }
+// }
+// @mixin title-pop-up-btn {
+//   @include font-font(2rem, 400, $font-family-rht, normal);
+//   line-height: 26px;
+//   // color: $color-title-pop-up;
+// }

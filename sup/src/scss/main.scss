@@ -1,0 +1,47 @@
+// @charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+  // 'vendors/reset';
+
+// 3. Base stuff
+@import
+  'base/fonts',
+  'base/base',
+  'base/helpers',
+  'base/typography';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/main',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/menu',
+  'components/logo',
+  'components/section',
+  'components/button',
+  'components/search',
+  'components/slider',
+  'components/pop-up',
+  'components/ansiens',
+  'components/playing-field',
+  'components/mythic-cards',
+  'components/content';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';

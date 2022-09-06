@@ -1,0 +1,66 @@
+.ancients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+  order: 1;
+
+  // .ancients__cards
+
+  &__cards {
+    // .ancients__cards_block
+
+    &_block {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // .ancients__cards_block-title
+
+    &_block-title {
+      // @include title;
+      font-size: 2em;
+      margin: 15px 0px 15px 0px;
+    }
+
+    // .ancients__cards_item
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: calc(100% / 5);
+      width: 100%;
+      margin: 0px 0px 15px 0px;
+      cursor: pointer;
+    }
+
+    // .ancients__cards_title
+
+    &_title {
+      // @include title;
+      font-size: 1.4em;
+      margin: 15px 0px 15px 0px;
+    }
+
+    // .ancients__cards_img
+
+    &_img {
+      height: auto;
+      width: 100px;
+      background-size: contain;
+      padding: 2;
+      box-sizing: border-box;
+      &:hover {
+        border: 2px solid #d9c01c;
+      }
+    }
+  }
+}
+
+.active {
+  border: 2px solid green;
+}

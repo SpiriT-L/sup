@@ -1,0 +1,16 @@
+.logo path {
+  cursor: pointer;
+  transition: fill 0.2s ease;
+  &:hover {
+    fill: $color-logo-hover;
+  }
+}
+
+.logo {
+  &:hover {
+    fill: $color-logo-hover;
+  }
+}
+// .logo hover path {
+//   fill: $color-logo-hover;
+// }
