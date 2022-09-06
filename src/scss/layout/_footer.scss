@@ -3,11 +3,17 @@
   color: $color-main-text-2;
   padding: 100px 0px 83px 0px;
 
+  @media (max-width: $lg){
+    padding: 50px 0px 83px 0px;
+  }
+
   &__top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // padding: 87px 0px 0px 0px;
+    @media (max-width: $lg){
+    flex-direction: column-reverse;
+    }
   }
   // .footer__form
 
@@ -16,6 +22,9 @@
     display: flex;
     flex-direction: column;
     margin: 0px 0px 57px 0px;
+    @media (max-width: $lg){
+    min-width: 100%;
+    }
   }
 
   // .footer__title
@@ -24,6 +33,11 @@
     color: $color-main-text-2;
     margin: 0px 0px 27px 0px;
     text-transform: uppercase;
+    @include font-h3-title;
+    @media (max-width: $sm){
+    font-size: 4rem;
+    text-align: center;
+    }
   }
 
   // .footer__input
@@ -61,7 +75,7 @@
     @include font-phone;
     color: $color-main-text-1;
     transition: background-color ease 0.3s;
-    cursor:  pointer;
+    cursor: pointer;
     &:hover {
       background-color: $color-header-btn-hover;
     }
@@ -74,9 +88,15 @@
     & path {
       cursor: pointer;
       transition: fill 0.2s ease;
-      &:hover{
+      &:hover {
         fill: $color-logo-hover;
       }
+    }
+    @media (max-width: $lg){
+    margin: 0px 0px 50px 0px;
+    }
+    @media (max-width: $sm){
+    display: none;
     }
   }
 
@@ -91,6 +111,13 @@
     display: flex;
     gap: 90px;
     justify-content: space-between;
+    @media (max-width: $lg) {
+      gap: 10px;
+    }
+    @media (max-width: $sm){
+      gap: 30px 100px;
+    flex-wrap: wrap;
+    }
   }
 
   // .footer__list-item
@@ -106,7 +133,7 @@
   }
 }
 .title {
-  @include font-h3-title;
+  // @include font-h3-title;
 }
 .btn {
 }
@@ -117,8 +144,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 52px;
+    gap: 47px;
     margin: 0px 0px 48px 0px;
+    @media (max-width: $xl) {
+      gap: 10px;
+    }
+    @media (max-width: $lg) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   // .instagram__title
@@ -131,5 +165,16 @@
   // .instagram__img
 
   &__img {
+    max-width: 260px;
+    @media (max-width: $xl) {
+      width: 100%;
+      align-self: stretch;
+    }
+  }
+  &__img-4 {
+    display: none;
+    @media (max-width: $lg) {
+      display: block;
+    }
   }
 }
