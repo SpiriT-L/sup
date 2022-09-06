@@ -172,7 +172,9 @@
     }
   }
   &__img-4 {
-    display: none;
+    @media (max-width: $xl){
+      display: none;
+    }
     @media (max-width: $lg) {
       display: block;
     }
